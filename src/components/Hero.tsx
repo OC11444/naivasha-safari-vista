@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-naivasha.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax */}
@@ -40,7 +43,13 @@ const Hero = () => {
             <Button variant="booking" size="xl" className="animate-scale-in">
               Book Your Safari
             </Button>
-            <Button variant="glass" size="xl" className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
+            <Button 
+              variant="glass" 
+              size="xl" 
+              className="animate-scale-in" 
+              style={{ animationDelay: '0.2s' }}
+              onClick={() => navigate('/virtual-tour')}
+            >
               Virtual Tour
             </Button>
           </div>
