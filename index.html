@@ -15,11 +15,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- ✅ Favicon fix -->
+    <link rel="icon" href="/naivasha-safari-vista/favicon.ico" />
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- ✅ Use relative path (./) so it works under GitHub Pages subfolder -->
-    <script type="module" src="./src/main.tsx"></script>
+    <!-- ✅ DO NOT manually change src — let Vite inject it on build -->
+    <script type="module" src="/naivasha-safari-vista/src/main.tsx"></script>
   </body>
 </html>
