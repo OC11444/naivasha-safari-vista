@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/naivasha-safari-vista/", // ✅ Add this line for GitHub Pages
+  base: "/naivasha-safari-vista/",
   server: {
     host: "::",
     port: 8080,
